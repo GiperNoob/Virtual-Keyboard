@@ -35,7 +35,6 @@ export default class Keyboard {
     this.keyButtons = [];
     this.rowsOrder.forEach((row, i) => {
       const rowElement = create('div', 'keyboard__row', null, this.container, ['row', i + 1]);
-      rowElement.style.gridTemplateColumns = `repeat(${row.length}, 1fr)`;
       row.forEach((code) => {
         const keyObj = this.keyBase.find((key) => key.code === code);
         if (keyObj) {

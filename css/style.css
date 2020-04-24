@@ -1,0 +1,165 @@
+main {
+    width: 1020px;
+    margin:0 auto;
+}
+
+.title {
+    font-size: 30px;
+    margin: 10px auto;
+    text-align: center;
+    color: #666d89;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.subtitle, .hint {
+    font-size: 20px;
+    margin: 10px auto;
+    text-align: center;
+    color: #666d89;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.output {
+    display: block;
+    width: 700px;
+    height: 200px;
+    margin: 10px auto 10px;
+    padding: 10px;
+    font-size: 18px;
+    color: #444444;
+    resize: none;
+}
+
+.output::placeholder {
+    color: #666d89;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    width: 705px;
+    margin: 10px auto 10px;
+    padding: 5px;
+    background: rgb(53, 82, 97);
+    border: 3px solid #222222;
+    border-radius: 5px;
+}
+
+.keyboard__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.keyboard__key {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background: #767e9e;
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    border-radius: 4px;
+    margin: 0 0 8px 3px;
+}
+
+.keyboard__key:hover {
+    background: #9fc495;
+}
+
+  .letter {
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    transition: all .2s ease;
+  }
+
+  .sub {
+    width: 100%;
+    color: #68688a;
+    text-align: left;
+    padding-left: 10px;
+    transition: all .2s ease;
+  }
+
+  [data-code="Delete"] {
+    width: 85px;
+    background: black;
+  }
+
+  [data-code="Tab"] {
+    width: 75px;
+    background: black;
+  }
+
+  [data-code="Backspace"] {
+    width: 85px;
+    background: black;
+  }
+
+  [data-code="CapsLock"] {
+    width: 86px;
+    background: black;
+  }
+
+  [data-code="Enter"] {
+    width: 72px;
+    background: black;
+  }
+
+  [data-code="ShiftLeft"] {
+    width: 68px;
+    background: black;
+  }
+
+  [data-code="ShiftRight"] {
+    width: 92px;
+    background: black;
+  }
+
+  [data-code="ControlLeft"] {
+    width: 50px;
+    background: black;
+  }
+
+  [data-code="Win"] {
+    width: 50px;
+    background: black;
+  }
+
+  [data-code="AltLeft"] {
+    width: 50px;
+    background: black;
+  }
+
+  [data-code="Space"] {
+    width: 300px;
+  }
+
+  [data-code="AltRight"] {
+    width: 50px;
+    background: black;
+  }
+
+  [data-code="ControlRight"] {
+    width: 50px;
+    background: black;
+  }
+
+  [data-code="ArrowLeft"],
+  [data-code="ArrowUp"],
+  [data-code="ArrowDown"],
+  [data-code="ArrowRight"] {
+  background: black;
+  }
