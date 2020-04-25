@@ -69,15 +69,18 @@ main {
     height: 40px;
     background: #767e9e;
     color: #ffffff;
-    font-family: "Lato", sans-serif;
-    font-style: normal;
-    font-weight: 400;
     border-radius: 4px;
     margin: 0 0 8px 3px;
 }
 
 .keyboard__key:hover {
     background: #9fc495;
+}
+
+.active {
+  background: rgb(60, 212, 0);
+  border-radius: 30%;
+  transition: all ease-in-out .1s;
 }
 
   .letter {
@@ -119,7 +122,7 @@ main {
   }
 
   [data-code="ShiftLeft"] {
-    width: 68px;
+    width: 108px;
   }
 
   [data-code="ShiftRight"] {
@@ -154,12 +157,8 @@ main {
     background: black;
   }
 
-  .active {
+  [data-fn="true"].active {
     background: rgb(60, 212, 0);
-    font-size: 18px;
-    font-family: "Lato", sans-serif;
-    font-style: normal;
-    font-weight: 700;
     border-radius: 30%;
     transition: all ease-in-out .1s;
   }

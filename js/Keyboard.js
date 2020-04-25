@@ -66,7 +66,6 @@ export default class Keyboard {
 
       if (code.match(/Control/) && this.altKey) this.switchLanguage();
       if (code.match(/Alt/) && this.ctrlKey) this.switchLanguage();
-
     } else if (type.match(/keyup|mouseup/)) {
       keyObj.div.classList.remove('active');
 
@@ -88,7 +87,7 @@ export default class Keyboard {
       if (!keyObj) return;
       button.shift = keyObj.shift;
       button.small = keyObj.small;
-      if(keyObj.shift && keyObj.shift.match(/[^a-zA-Zа-яА-ЯёЁ0-9]/g)) {
+      if (keyObj.shift && keyObj.shift.match(/[^a-zA-Zа-яА-ЯёЁ0-9]/g)) {
         button.sub.innerHTML = keyObj.shift;
       } else {
         button.sub.innerHTML = '';
