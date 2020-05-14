@@ -1,0 +1,164 @@
+main {
+    width: 1020px;
+    margin:0 auto;
+}
+
+.title {
+    font-size: 30px;
+    margin: 10px auto;
+    text-align: center;
+    color: #666d89;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.subtitle, .hint {
+    font-size: 20px;
+    margin: 10px auto;
+    text-align: center;
+    color: #666d89;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.output {
+    display: block;
+    width: 700px;
+    height: 200px;
+    margin: 10px auto 10px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #444444;
+    resize: none;
+}
+
+.output::placeholder {
+    color: #666d89;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    width: 705px;
+    margin: 10px auto 10px;
+    padding: 5px;
+    background: rgb(53, 82, 97);
+    border: 3px solid #222222;
+    border-radius: 5px;
+}
+
+.keyboard__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.keyboard__key {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background: #767e9e;
+    color: #ffffff;
+    border-radius: 4px;
+    margin: 0 0 8px 3px;
+}
+
+.keyboard__key:hover {
+    background: #9fc495;
+}
+
+.active {
+  background: rgb(60, 212, 0);
+  border-radius: 30%;
+  transition: all ease-in-out .1s;
+}
+
+  .letter {
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    transition: all .2s ease;
+  }
+
+  .sub {
+    width: 100%;
+    color: #68688a;
+    text-align: left;
+    padding-left: 10px;
+    transition: all .2s ease;
+  }
+
+  [data-code="Delete"] {
+    width: 85px;
+  }
+
+  [data-code="Tab"] {
+    width: 75px;
+  }
+
+  [data-code="Backspace"] {
+    width: 85px;
+  }
+
+  [data-code="CapsLock"] {
+    width: 86px;
+  }
+
+  [data-code="Enter"] {
+    width: 72px;
+  }
+
+  [data-code="ShiftLeft"] {
+    width: 108px;
+  }
+
+  [data-code="ShiftRight"] {
+    width: 92px;
+  }
+
+  [data-code="ControlLeft"] {
+    width: 50px;
+  }
+
+  [data-code="Win"] {
+    width: 50px;
+  }
+
+  [data-code="AltLeft"] {
+    width: 50px;
+  }
+
+  [data-code="Space"] {
+    width: 300px;
+  }
+
+  [data-code="AltRight"] {
+    width: 50px;
+  }
+
+  [data-code="ControlRight"] {
+    width: 50px;
+  }
+
+  [data-fn="true"] {
+    background: black;
+  }
+
+  [data-fn="true"].active {
+    background: rgb(60, 212, 0);
+    border-radius: 30%;
+    transition: all ease-in-out .1s;
+  }
